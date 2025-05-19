@@ -229,6 +229,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     background: rgba(42,45,84,.60);
 }
 .header-area{position: absolute;top:0;left:0;width: 100%;z-index: 99;}
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff; /* Optional: ensure it's visible over content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
 
 /*.welcome-hero-txt*/
 .welcome-hero-txt{text-align: center;padding:290px 0 372px;}
