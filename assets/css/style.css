@@ -206,7 +206,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 --------------------------------------*/
 .welcome-hero {
     position: relative;
-    background:url(../images/welcome-hero/welcome-banner2.jpg)no-repeat;
+    background:url(../images/welcome-hero/welcome-banner1.jpg)no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 1;
@@ -710,4 +710,47 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+
+/* My customization */
+ .single-testimonial-box {
+      display: flex;
+      flex-direction: column;
+      /* height: 100vh; */
+      height: 100vh;
+    }
+
+    .testimonial-person {
+      padding: 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .testimonial-img {
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .testimonial-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      display: block;
+    }
+
+    .single-testimonial-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 300px; /* or whatever height fits your layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+    /* Hide the comment section for this layout */
+    /* .testimonial-comment, .testimonial-info {
+      display: none;
+    } */
 /*========================Thank you=================
