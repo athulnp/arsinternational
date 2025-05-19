@@ -766,6 +766,88 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
   justify-content: flex-start;
 }
 
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent;
+  padding: 20px 40px;
+  transition: background 0.3s ease;
+  background-color: black;
+}
+/* Navigation Container */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo + Company Name */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.company-name {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Nav Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #f0a500;
+}
+.logo img {
+  height: 60px; /* increased from 40px */
+  width: auto;
+}
+
+.company-name {
+  color: white;
+  font-size: 26px; /* increased from 20px */
+  font-weight: bold;
+}
+
+/* Optional: background on scroll */
+body.scrolled .header-area {
+  background: rgba(0, 0, 0, 0.85);
+}
+
     /* Hide the comment section for this layout */
     /* .testimonial-comment, .testimonial-info {
       display: none;
