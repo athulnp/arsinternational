@@ -843,6 +843,56 @@ body {
   font-weight: bold;
 }
 
+.footer-copyright {
+  background-color: #2c2e52; /* or your dark background */
+  color: #ccc;
+  padding: 20px 30px;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-text {
+  max-width: 800px;
+  margin-bottom: 15px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-social a {
+  color: #aaa;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-text {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 /* Optional: background on scroll */
 body.scrolled .header-area {
   background: rgba(0, 0, 0, 0.85);
