@@ -582,7 +582,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 .footer-contact p {
     margin: 0;
-    color: #d1d7e9;
+    color: white;
 }
 /*.footer-logo*/
 
@@ -610,8 +610,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 .single-footer-widget ul li a {
     font-size:  14px;
-    color:  #cfd0e3;
-    font-weight:  300;
+    color:  white;
+    /* font-weight:  300; */
     padding-bottom: 13px;
 }
 .single-footer-widget ul li a span {text-transform: lowercase;}
@@ -660,9 +660,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 .footer-copyright p,.footer-copyright p a {
     color: #a8a9bf;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
 }
 .footer-social{text-align: right;}
 .footer-social a i {
