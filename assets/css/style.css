@@ -1052,26 +1052,73 @@ body {
     cursor: pointer;
   }
 }
+.menu-toggle {
+  display: none; /* default hidden */
+}
 
-/* Show menu toggle only on mobile */
-@media (min-width: 769px) {
+@media (max-width: 768px) {
   .menu-toggle {
-    display: none;
+    display: block; /* only show on mobile */
+  }
+}
+/* Fix for mobile nav layout on all phones */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    align-self: flex-end;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
   }
 
   .nav-right {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-right.show-menu {
+    display: flex;
   }
 
   .nav-menu {
-    flex-direction: row;
-    gap: 30px;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    color: white;
+  }
+
+  .iso-logo,
+  .icv-logo {
+    padding-left: 20px;
+  }
+
+  .iso-logo img,
+  .icv-logo img {
+    height: 40px;
+    max-width: 100%;
   }
 }
-
 
 /* Optional: background on scroll */
 body.scrolled .header-area {
