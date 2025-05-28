@@ -787,7 +787,7 @@ body {
   background: transparent;
   padding: 20px 40px;
   transition: background 0.3s ease;
-  background-color: black;
+  background-color: #4b2c78;
 }
 /* Navigation Container */
 .nav-bar {
@@ -801,10 +801,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  height: 30px;
 }
 
 .logo img {
-  height: 40px;
+  height: 70px;
   width: auto;
 }
 
@@ -819,6 +820,8 @@ body {
   list-style: none;
   display: flex;
   gap: 35px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu li a {
@@ -893,6 +896,45 @@ body {
   }
 }
 
+.iso-logo img {
+  height: 45px;
+}
+.icv-logo img {
+  height: 45px;
+}
+
+/* Right section: menu + logos */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between menu and logos */
+}
+
+/* Nav menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #007BFF;
+}
+
+/* Logos */
+.iso-logo img,
+.icv-logo img {
+  height: 45px;
+}
 /* Optional: background on scroll */
 body.scrolled .header-area {
   background: rgba(0, 0, 0, 0.85);
