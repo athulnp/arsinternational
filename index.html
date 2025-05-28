@@ -78,32 +78,42 @@
         your experience and security.
       </p>
     <![endif]-->
+<!-- JavaScript to toggle menu -->
+
 
     <!--welcome-hero start -->
     <section id="home" class="welcome-hero">
       <!-- top-area Start -->
       <div class="top-area">
-         <header class="header-area">
-    <nav class="nav-bar">
-       <div class="logo">
-        <img src="arslogo.png" alt="Logo" />
-        <span class="company-name">ARS International</span>
-      </div>
-      <div class="nav-right">
+       <header class="header-area">
+  <nav class="nav-bar">
+    <div class="logo">
+      <img src="arslogo.png" alt="Logo" />
+      <span class="company-name">ARS International</span>
+    </div>
+
+    <!-- Hamburger icon -->
+    <button class="menu-toggle"  id="menuToggle">&#9776;</button>
+
+    <!-- Collapsible menu + logos -->
+    <div class="nav-right" id="navRight">
       <ul class="nav-menu">
         <li class="scroll active"><a href="#home">Home</a></li>
-        <li class="scroll"><a href="#service" style="text-transform: none;">About us</a></li>
-        <li class="scroll"><a href="#product" style="text-transform: none;">Products</a></li>
-        <li class="scroll"><a href="#contact" style="text-transform: none;">Contact us</a></li>
+        <li class="scroll"><a href="#service">About us</a></li>
+        <li class="scroll"><a href="#product">Products</a></li>
+        <li class="scroll"><a href="#contact">Contact us</a></li>
       </ul>
-      <div class="iso-logo">
-        <img src="iso_logo.png" alt="ISO Certified" />
-      </div>
-      <div class="icv-logo">
-        <img src="icv_logo.png" alt="ICV Certified" />
-      </div>
+      <!-- <div class="logo-wrapper"> -->
+        <div class="iso-logo">
+          <img src="iso_logo.png" alt="ISO Certified" />
+        </div>
+        <div class="icv-logo">
+          <img src="icv_logo.png" alt="ICV Certified" />
+        </div>
+      <!-- </div> -->
     </div>
-  </header>
+  </nav>
+</header>
         <!--/.header-area-->
       </div>
       <!-- /.top-area-->
@@ -1079,5 +1089,12 @@ Precision automation parts and products to enhance productivity and streamline i
 
     <!--Custom JS-->
     <script src="assets/js/custom.js"></script>
+
+    <script>
+  document.getElementById("menuToggle").addEventListener("click", function () {
+    const navRight = document.getElementById("navRight");
+    navRight.classList.toggle("show-menu");
+  });
+</script>
   </body>
 </html>

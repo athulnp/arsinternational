@@ -935,6 +935,144 @@ body {
 .icv-logo img {
   height: 45px;
 }
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap;
+  }
+
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #4b2c78;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .nav-right.active {
+    display: flex;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+
+  .nav-menu li a {
+    color: white;
+    padding: 8px 0;
+    display: block;
+  }
+
+  .iso-logo img,
+  .icv-logo img {
+    height: 40px;
+  }
+
+  .logo-wrapper {
+    justify-content: flex-start;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer-top .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-top .col-md-4,
+  .footer-top .col-md-2,
+  .footer-top .col-sm-6,
+  .footer-top .col-xs-12 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-copyright .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .footer-copyright .footer-text p {
+    margin-bottom: 10px;
+  }
+}
+
+/* Hide nav on mobile by default */
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #4b2c78;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-right.show-menu {
+    display: flex;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu li a {
+    padding: 10px 0;
+    display: block;
+    color: white;
+  }
+
+  .iso-logo img,
+  .icv-logo img {
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+/* Show menu toggle only on mobile */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-right {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+
 /* Optional: background on scroll */
 body.scrolled .header-area {
   background: rgba(0, 0, 0, 0.85);
