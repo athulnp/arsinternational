@@ -1077,6 +1077,7 @@ body {
     color: white;
     margin-bottom: 10px;
     cursor: pointer;
+    margin-top: -34px;
   }
 
   .nav-right {
@@ -1118,8 +1119,18 @@ body {
     height: 40px;
     max-width: 100%;
   }
+  .logo img {
+    height: 30px;
+    width: auto;
+}
+.company-name {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+
+}
 /* Optional: background on scroll */
 body.scrolled .header-area {
   background: rgba(0, 0, 0, 0.85);
