@@ -1071,13 +1071,13 @@ body {
   .menu-toggle {
     display: block;
     align-self: flex-end;
-    font-size: 28px;
+    font-size: 19px;
     background: none;
     border: none;
     color: white;
     margin-bottom: 10px;
     cursor: pointer;
-    margin-top: -34px;
+    margin-top: -28px;
   }
 
   .nav-right {
