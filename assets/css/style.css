@@ -235,7 +235,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
   left: 0;
   width: 100%;
   z-index: 9999;
-  background-color: #fff; /* Optional: ensure it's visible over content */
+  background-color: lightslategray; /* Optional: ensure it's visible over content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
 }
 
@@ -787,7 +787,7 @@ body {
   background: transparent;
   padding: 20px 40px;
   transition: background 0.3s ease;
-  background-color: #4b2c78;
+  background-color: lightslategray;
 }
 /* Navigation Container */
 .nav-bar {
